@@ -1,0 +1,124 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #0A0908;
+    color: #F2F4F3;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22333B;
+    padding: 1rem 2rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: #F2F4F3;
+    font-size: 1.5rem;
+}
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #F2F4F3;
+    cursor: pointer;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links li a {
+    color: #F2F4F3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #A9927D;
+}
+.classy{
+    height: 01px;
+    background-color: #A9927D;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #22333B;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+#contact-us {
+    padding: 10rem 1rem;
+    background: #0A0908 ;
+    color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background:  #22333B;
+    padding: 2rem;
+    border: 1px solid #A9927D;
+}
+
+.contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+.email-link {
+    color: #A9927D;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #5E503F;
+}
+
+.branch-selector {
+    margin: 1.5rem 0;
+}
+
+.branch-selector select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #A9927D;
+    border-radius: 5px;
+    outline: none;
+    background: #F2F4F3;
+    color: #22333B;
+}
+
+.branch-selector select:focus {
+    border-color: #5E503F;
+}
+
+.contact-number {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}

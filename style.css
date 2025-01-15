@@ -1,0 +1,115 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #000017;
+    color: #F2F4F3;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22333B;
+    padding: 1rem 2rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: #F2F4F3;
+    font-size: 1.5rem;
+}
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #F2F4F3;
+    cursor: pointer;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links li a {
+    color: #F2F4F3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #A9927D;
+}
+.classy{
+    height: 01px;
+    background-color: #A9927D;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #22333B;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .container{
+        justify-content: center;
+    }
+}
+
+main {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    text-align: center;
+}
+.container {
+    text-align: center;
+    margin-top: 14.7%;
+}
+.upper{
+    font-size: 2.4rem;
+}
+/* Animated Title */
+.animated-title {
+    font-size: 9rem;
+    font-weight: bold;
+    color: #A9927D;
+    position: relative;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Font Size */
+@media (max-width: 768px) {
+    .animated-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-title {
+        font-size: 2rem;
+    }
+}

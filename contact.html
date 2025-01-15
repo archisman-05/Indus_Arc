@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="mlroylogo.webp" alt="M.L. Roy & Co. Logo" height="60"/>
+                <span>M. L. Roy & Co.</span>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="branches.html">Our Branches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="classy"></div>
+        <script src="contact.js">
+    </script>
+    </header>
+    <section id="contact-us">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Email us directly at <a href="mailto:your-email@example.com" class="email-link">email@example.com</a></p>
+        <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <h3>or</h2>
+            <p>Select a branch to get the contact number:</p>
+            <div class="branch-selector">
+                <label for="branch">Choose a Branch:</label>
+                <select id="branch" onchange="updateContactNumber()">
+                    <option value="" selected disabled>Select a branch</option>
+                    <option value="kankurgachi">M.L. Roy & Co. Salt Lake</option>
+                    <option value="saltlake">M.L. Roy & Co. Kankurgachi</option>
+                </select>
+            </div>
+            <p id="contact-number" class="contact-number"></p>
+    </div>
+        </div>
+    </section>
+</body>
